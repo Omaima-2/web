@@ -109,7 +109,22 @@ form{
 }
 
 
+.input-file {
+    display: none; /* Hide the default file input */
+}
 
+.input-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6666ff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.input-file-label:hover {
+    background-color: #016dcb;
+}
 
 
 
