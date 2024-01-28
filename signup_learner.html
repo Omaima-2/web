@@ -21,27 +21,27 @@
             <header>Signup</header>
             <form action="#">
                 <div class="field input-field">
-                    <input type="text" placeholder="First name" class="input" required>
+                    <input type="text" placeholder="First name" class="input" minlength="2" maxlength="10" required>
                 </div>
                 <div class="field input-field">
-                    <input type="text" placeholder="Last name" class="input" required>
+                    <input type="text" placeholder="Last name" class="input" minlength="3" maxlength="20" required>
+                </div>
+
+                <div class="field input-field"> <!-- to check --> 
+                    <input type="email" placeholder="Email" class="input" required minlength="11" maxlength="30" >
                 </div>
 
                 <div class="field input-field">
-                    <input type="email" placeholder="Email" class="input" required>
-                </div>
-
-                <div class="field input-field">
-                    <input type="password" placeholder="Create password" class="password" required>
+                    <input type="password" placeholder="Create password" class="password" minlength="10" maxlength="30" required>
                     <i class='bx bx-hide eye-icon'></i>
                 </div>
 
                 
-                <div class="field input-field">
-                    <input type="text" placeholder="City" class="input" required>
+                <div class="field input-field"><!-- to check --> 
+                    <input type="text" placeholder="City" class="input" minlength="5" maxlength="20" required>
                 </div>
 
-                <div class="field input-field">
+                <div class="field input-field"><!-- to complete --> 
                     <input type="text" placeholder="Location(National Address)" class="input" required>
                 </div>
 
