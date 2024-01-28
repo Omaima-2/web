@@ -1,0 +1,83 @@
+body{
+    background-image: radial-gradient(circle, #ffc05a, #ffbf79, #ffc096, #ffc5b0, #ffcdc6, #fbd3c8, #f6d9cc, #f2ded2, #eee5cd, #e1edd1, #cff6df, #bdfcf7);
+}
+
+.users{
+    margin-left: 130px;
+    
+    margin-top: 120px;
+    
+    
+    background-color: rgba(229, 226, 226, 0.366);
+    border: 1px solid rgba(95, 94, 94, 0.1);
+    backdrop-filter: blur(100px);
+    color: rgb(255, 255, 255);
+
+height: 600px;
+width: 1100px;
+border-radius: 20px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.learnerButton {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.432);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(100px);
+    color: rgb(43, 29, 29);
+    cursor: pointer;
+    height: 450px;
+    width: 250px;
+    margin-right: 20px;
+    margin-left: 460px;
+    margin-top: 75px;
+    font-family: 'Nunito',sans-serif;
+    font-size: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all .2s;
+}
+
+.learnerabautton:hover {
+    background-color: rgba(93, 90, 90, 0.092);
+  }
+
+  button:active {
+    box-shadow: rgba(47, 46, 46, 0.647) 0px 2px 8px 0px;
+    transform: scale(1.05);
+  }
+
+  button:hover{
+    transform: scale(1.05);
+
+  }
+
+.PartnerButton {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.432);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(100px);
+    color: rgb(39, 27, 27);
+    cursor: pointer;
+    height: 450px;
+    width: 250px;
+    font-family: 'Nunito',sans-serif;
+    font-size: 50px;
+    border-radius: 20px;
+    margin-left: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all .2s;
+
+}
+
+.learnerpic{
+    height: 150px;
+   margin-top: 30px;
+}
+
+.partnerpic{
+    height: 150px;
+    margin-top: 30px;
+}
+
