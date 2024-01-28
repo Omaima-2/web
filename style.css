@@ -13,14 +13,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #6666ff 0%, #993399 100%);
+    background: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
     column-gap: 30px;
 }
 .form{
     position: absolute;
     max-width: 430px;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     border-radius: 6px;
     background: #FFF;
 }
@@ -164,7 +164,7 @@ form{
 
   .logo {
     position: absolute;
-    top: -23px;
+    top: -40px;
     right: 20px;
     left: 22px; ;
     width: 150px;
@@ -185,7 +185,7 @@ a.google span{
     }
     
 }
-<style>
+
   .Gender-details {
     display: flex;
     align-items: center;
@@ -194,7 +194,7 @@ a.google span{
   .Gender-details label {
     margin-right: 10px;
   }
-</style>
+
 
 
 
