@@ -54,6 +54,21 @@ form{
     margin-top: 20px;
     border-radius: 6px;
 }
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.form .city{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.city input,
 .field input,
 .field button{
     height: 100%;
@@ -63,10 +78,26 @@ form{
     font-weight: 400;
     border-radius: 6px;
 }
+.city button{
+    height: 100%;
+    width: 50%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.city input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
 .field input{
     outline: none;
     padding: 0 15px;
     border: 1px solid#CACACA;
+}
+.city input:focus{
+    border-bottom-width: 2px;
 }
 .field input:focus{
     border-bottom-width: 2px;
@@ -141,3 +172,16 @@ a.google span{
     }
     
 }
+<style>
+  .Gender-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .Gender-details label {
+    margin-right: 10px;
+  }
+</style>
+
+
+
