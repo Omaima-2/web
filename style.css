@@ -110,7 +110,7 @@ form{
 
 
 .input-file {
-    display: none; /* Hide the default file input */
+    display: none; 
 }
 
 .input-file-label {
@@ -125,7 +125,20 @@ form{
 .input-file-label:hover {
     background-color: #016dcb;
 }
+.optional-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8b8b8b; 
+  }
 
+  .logo {
+    position: absolute;
+    top: -23px;
+    right: 20px;
+    left: 22px; ;
+    width: 150px;
+    height: 150px;
+}
 
 
 
