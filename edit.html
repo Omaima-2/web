@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Information</title>
+  <link rel="stylesheet" type="text/css" href="edit.css">
+</head>
+<body>
+  <h1>Edit Information</h1>
+  <div class="container">
+    <div class="img-container">
+    
+  <form>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" value="Sara"required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" value="Mohammed"required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" value="20">
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender"required>
+      <option value="male" >Male</option>
+      <option value="female"selected>Female</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="johndoe@example.com"required>
+
+    <label for="photo">Photo:</label>
+    <input type="file" id="photo" name="photo">
+
+    <label for="password" class="password-toggle">Password:
+      <input type="password" id="password" name="password" value="********" required>
+      <span class="toggle-icon">&#x1f441;</span>
+    </label>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" value="053583976 " required>
+
+    <label >City:</label>
+    <input type="text" id="city" name="city" value="Riyadh" required>
+        
+    <button onclick="window.location.href='new.html'">save</button>
+  </form>
+</body>
+</html>
