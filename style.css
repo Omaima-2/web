@@ -13,14 +13,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #6666ff 0%, #993399 100%);
+    background: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
     column-gap: 30px;
 }
 .form{
     position: absolute;
     max-width: 430px;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     border-radius: 6px;
     background: #FFF;
 }
@@ -54,6 +54,21 @@ form{
     margin-top: 20px;
     border-radius: 6px;
 }
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.form .city{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.city input,
 .field input,
 .field button{
     height: 100%;
@@ -63,10 +78,26 @@ form{
     font-weight: 400;
     border-radius: 6px;
 }
+.city button{
+    height: 100%;
+    width: 50%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.city input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
 .field input{
     outline: none;
     padding: 0 15px;
     border: 1px solid#CACACA;
+}
+.city input:focus{
+    border-bottom-width: 2px;
 }
 .field input:focus{
     border-bottom-width: 2px;
@@ -109,8 +140,36 @@ form{
 }
 
 
+.input-file {
+    display: none; 
+}
 
+.input-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6666ff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
+.input-file-label:hover {
+    background-color: #016dcb;
+}
+.optional-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8b8b8b; 
+  }
+
+  .logo {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 22px; ;
+    width: 150px;
+    height: 150px;
+}
 
 
 
@@ -126,3 +185,16 @@ a.google span{
     }
     
 }
+
+  .Gender-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .Gender-details label {
+    margin-right: 10px;
+  }
+
+
+
+
