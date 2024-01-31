@@ -6,6 +6,7 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
+.custom-img { width: 100px; height: 100px; }
 
 .navbar {
   background: #000000;/*header */
@@ -249,9 +250,10 @@
 }
 
 .hero__heading {
-  font-size: 100px;
+  font-size: 50px;
   margin-bottom: 24px;
   color: #fff;
+  text-align: left;
 }
 
 .hero__heading span {
@@ -274,23 +276,27 @@
 }
 
 .hero__description {
-  font-size: 60px;
-  background: #da22ff; /* fallback for old browsers */
+  font-size: 45px;
+  text-align: left;
+  background: #5ea5f6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #9114ff,
-    #da22ff
+    #5ea5f6,
+    #373191
+  
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8f0eff,
-    #da22ff
+    #5ea5f6,
+    #373191
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  text-align: left;
+
 }
 
 .highlight {
@@ -304,6 +310,7 @@
 
   .hero__description {
     font-size: 40px;
+    text-align: left;
   }
 }
 
@@ -523,7 +530,7 @@
 
 .services h1 {
   background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-image: linear-gradient(to right, #eea0b3 0%, #f7673c 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
