@@ -56,15 +56,14 @@ body {
   }
 
   .container{
-    margin-top: 100px;
+    margin-top: 50px;
     display: grid;
     place-items: center;
-    height: 100%;
+    height:700px;
     background-color: rgba(229, 226, 226, 0.366);
     border: 1px solid rgba(95, 94, 94, 0.1);
     backdrop-filter: blur(100px);
     color: rgb(255, 255, 255);
-    height: 600px;
     width: 1100px;
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -82,4 +81,121 @@ body {
     justify-content: center;
     align-items: flex-start;
     height: 90%;
+}
+
+.names-container{
+    display: flex;
+    margin-top: 30px;
+    height: 30px;
+}
+
+.lastName-lable{
+    width: 250px;
+    margin-left: 30px;
+    
+}
+
+.firstName-lable{
+    width: 300px;
+    margin-right: 0px;
+    
+    
+}
+
+.lastName-container{
+   width: 250px;
+}
+
+
+
+.email-password-container{
+    display: flex;
+    margin-top: 30px;
+    height: 30px;
+}
+
+.password-toggle{
+    width: 300px;
+    margin-left: 30px;
+    
+}
+
+.email-lable{
+    width: 120px;
+    margin-right: 0px;
+    
+    
+}
+
+.password-container{
+   width: 400px;
+}
+
+
+
+
+
+
+.age-gender-container{
+    display: flex;
+    margin-top: 30px;
+    height: 30px;
+    
+}
+
+.gender-lable{
+    width: 50px;
+    
+}
+
+.age-lable{
+    width: 120px;
+    margin-left: 30px;
+    
+    
+}
+
+
+.age{
+    margin-right: 100px;
+    width: 500px;
+    margin-left: 10px;
+}
+
+.gender-selector{
+    margin-left: 20px;
+}
+
+
+
+
+
+.phone-city-container{
+    display: flex;
+    margin-top: 30px;
+    height: 30px;
+}
+
+.city-lable{
+    width: 100px;
+    margin-left: 30px;
+    
+}
+
+.city{
+    margin-left: 20px;
+}
+
+.phone-lable{
+    width: 150px;
+    margin-right: 0px;
+    
+    
+}
+
+.save-button{
+    border-radius: 20px;
+    width: 200px;
+    border: 3px solid rgba(43, 39, 39, 0.1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
