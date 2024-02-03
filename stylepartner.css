@@ -11,8 +11,9 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #d5af7d, #efb2b2);
-}
+  
+    background-image: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
+  }
 .container{
   max-width: 700px;
   width: 100%;
