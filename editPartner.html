@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Information</title>
+  <link rel="stylesheet" type="text/css" href="editLearner.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Edit Information</h1>
+    <div class="img-container">
+        <img class="user-pic" src="images\userpic.png">
+        </div>
+    
+  
+    <div class="names-container">
+        <div class="lastName-container">
+    <label class="firstName-label">First Name:</label>
+</div>
+    <input type="text" id="firstName" name="firstName" value="Sara"required>
+
+    <label class="lastName-lable">Last Name:</label>
+
+    <input type="text" id="lastName" name="lastName" value="Mohammed"required>
+    </div>
+
+
+    <div class="email-password-container">
+    <label class="email-lable">Email:</label>
+    <input type="email" id="email" name="email" value="johndoe@example.com"required>
+    
+
+    <div class="password-container">
+    <label for="password" class="password-toggle">Password:
+        <input type="password" id="password" name="password" value="********" required>
+        <span class="toggle-icon">&#x1f441;</span>
+      </label>
+      </div>
+    </div>
+
+
+
+
+    <div class="age-gender-container">
+    <label class="age-lable">Age:</label>
+    <input type="number" class="age" name="age" value="20">
+
+    
+   
+    <label class="gender-lable">Gender:</label>
+    <select class="gender-selector" name="gender"required>
+      <option value="male" >Male</option>
+      <option value="female"selected>Female</option>
+    </select>
+
+
+</div>
+
+      
+
+<div class="phone-city-container">
+    <label for="phone" class="phone-lable">Phone:</label>
+    <input type="tel" id="phone" name="phone" value="053583976 " required>
+
+    <label class="city-lable">City:</label>
+    <input type="text" id="city" name="city" value="Riyadh" required>
+
+</div>
+
+<div class="bio-section">
+    <div class="bio-label">Bio:</div>
+    <textarea class="bio-input" placeholder="Write your bio"></textarea>
+  </div>
+        
+    <button onclick="window.location.href='new.html'" class="save-button">save</button>
+  
+</body>
+</html>
