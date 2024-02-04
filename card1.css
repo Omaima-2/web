@@ -110,6 +110,10 @@ body {
   margin-top: 1rem;
 }
 
+.approved-rejected-icon{
+    height: 50px;
+    width: 70px;
+}
 .title {
   font-size: 1.3rem;
   font-weight: bold;
@@ -149,12 +153,17 @@ body {
   }
 
   .content {
-    transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(100% - 14.5rem));
   }
-  .content > *:not(.title) {
+  
+  content > *:not(.approved-rejected-icon) {
     opacity: 0;
     transform: translateY(1rem);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .space{
+    height: 90px;
   }
 
   .card:hover,
@@ -173,16 +182,19 @@ body {
 .card:focus-within .content {
     transform: translateY(0);
   }
-  .card:hover .content > *:not(.title),
-.card:focus-within .content > *:not(.title) {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: calc(var(--d) / 8);
-  }
+
+  .card:hover .content > *:not(.approved-rejected-icon),
+  .card:focus-within .content > *:not(.approved-rejected-icon) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: calc(var(--d) / 8);
+    }
+  
+
 
   .card:focus-within:before, .card:focus-within:after,
 .card:focus-within .content,
-.card:focus-within .content > *:not(.title) {
+.card:focus-within .content > *:not(.approved-rejected-icon) {
     transition-duration: 0s;
   }
 }
