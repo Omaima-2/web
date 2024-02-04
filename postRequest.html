@@ -15,44 +15,50 @@
       <form action="#">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">language:</span>
+            <span class="details">Language want to learn:</span>
             <select name="language" required>
-                <option value="" disabled selected>Language want to learn</option>
-                <option value="english">English</option>
-                <option value="spanish">Spanish</option>
-                <option value="german">German</option>
-                <!-- Add more options for other languages as needed -->
-              </select>
+              <option value="" disabled selected>Language want to learn</option>
+              <option value="english">English</option>
+              <option value="spanish">Spanish</option>
+              <option value="german">German</option>
+              <!-- Add more options for other languages as needed -->
+            </select>
           </div>
+          
           <div class="input-box">
             <span class="details">Level:</span>
             <select name="Level" required>
-                <option value="" disabled selected>your current level</option>
-                <option value="Beginner">Beginner</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
-                <!-- Add more options for other languages as needed -->
-              </select>
+              <option value="" disabled selected>your current level</option>
+              <option value="Beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <!-- Add more options for other levels as needed -->
+            </select>
           </div>
+          
           <div class="input-box">
             <span class="details">Schedule a session:</span>
-            <input type="date"  required>
+            <input type="date" required>
           </div>
+          
           <div class="input-box">
-            <span class="details">session duration:</span>
+            <span class="details">Session duration:</span>
             <select name="duration" required>
-                <option value="" disabled selected>Select a duration</option>
-                <option value="15">15 minutes</option>
-                <option value="30">30 minutes</option>
-                <option value="30">1 hour</option>
-                <!-- Add more options for other languages as needed -->
-              </select>
+              <option value="" disabled selected>Select a duration</option>
+              <option value="15">15 minutes</option>
+              <option value="30">30 minutes</option>
+              <option value="60">1 hour</option>
+              <!-- Add more options for other durations as needed -->
+            </select>
           </div>
-          <div class="buttons">
-            <a class="button"href="button.html">send</a>
-            <a class="buttonk"href="postRequest.html">cancle</a>
-          </div>
-        
+          
+          <div>
+            <form>
+              <input type="submit" value="Post" class="green-button">
+              <input type="reset" value="Clear" class="red-button">
+            </form>
+           
+ 
         </div>     
 </body>
 </html>

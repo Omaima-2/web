@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Information</title>
+  <link rel="stylesheet" type="text/css" href="ProfileLearner.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Edit Information</h1>
+    <div class="img-container">
+        <img class="user-pic" src="images\userpic.png">
+        </div>
+    
+  
+    <div class="names-container">
+        <div class="lastName-container">
+    <label class="firstName-label">First Name:</label>
+</div>
+    <input type="text" id="firstName" name="firstName" value="Seba"readonly>
+
+    <label class="lastName-lable">Last Name:</label>
+
+    <input type="text" id="lastName" name="lastName" value="saleh"readonly>
+    </div>
+
+
+    <div class="email-password-container">
+    <label class="email-lable">Email:</label>
+    <input type="email" id="email" name="email" value="sebaSaleh@example.com"readonly>
+    
+
+    <div class="password-container">
+    <label for="password" class="password-toggle">Password:
+        <input type="password" id="password" name="password" value="********" readonly>
+        <span class="toggle-icon">&#x1f441;</span>
+      </label>
+      </div>
+    </div>
+
+
+
+
+    <div class="age-gender-container">
+    <label class="age-lable">Age:</label>
+    <input type="number" class="age" name="age" value="30" readonly>
+
+    
+
+    <label class="gender-label">Gender:</label>
+    <select class="gender-selector" name="gender" disabled>
+      <option value="male">Male</option>
+      <option value="female" selected>Female</option>
+    </select>
+
+</div>
+
+      
+
+<div class="phone-city-container">
+    <label for="phone" class="phone-lable">Phone:</label>
+    <input type="tel" id="phone" name="phone" value="053583976 " readonly>
+
+    <label class="city-lable">City:</label>
+    <input type="text" id="city" name="city" value="Riyadh" readonly>
+
+</div>
+        
+  
+</body>
+</html>
