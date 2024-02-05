@@ -244,6 +244,11 @@ select {
     color: white;
     font-size: 20px;
     padding: 14px 28px;
+    
+  }
+  .green-button:hover{
+    cursor: pointer;
+    border: #3fc565;
   }
   
   .red-button {
@@ -251,4 +256,8 @@ select {
     color: white;
     font-size: 20px;
     padding: 14px 28px;
+  }
+  .red-button:hover{
+    cursor: pointer;
+    border: #efb2b2;
   }
