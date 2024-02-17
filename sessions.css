@@ -57,7 +57,9 @@ body {
   .card {
     height: 350px;
   }
+
 }
+
 .card:before {
   content: "";
   position: absolute;
@@ -185,4 +187,6 @@ body {
 .card:focus-within .content > *:not(.title) {
     transition-duration: 0s;
   }
+
+
 }
