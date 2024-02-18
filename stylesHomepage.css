@@ -266,13 +266,13 @@
   background: #ee0979; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ff6a00,
-    #ee0979
+    #fac59f,
+    #ff49c5
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #ff6a00,
-    #ee0979
+    #fac59f,
+    #ff49c5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -302,7 +302,7 @@
 }
 
 .highlight {
-  border-bottom: 4px solid rgb(132, 0, 255);
+  border-bottom: 4px solid rgb(189, 134, 241);
 }
 
 @media screen and (max-width: 768px) {
@@ -312,6 +312,7 @@
 
   .hero__description {
     font-size: 40px;
+    
   }
 }
 
