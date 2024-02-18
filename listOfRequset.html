@@ -2,9 +2,81 @@
 <html>
     <head>
         <title>My Request </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="ListOfRequest.css" />
+        
         <link rel="icon" href="Logo.png" type="image/x.icon">
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+          crossorigin="anonymous"
+        />
     </head>
     <body>
+       <!-- Navbar Section --><nav class="navbar">
+  <div class="navbar__container">
+    <img src="LogoBlackBackground.PNG" alt="Flunecy">
+
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span> <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="#home" class="navbar__links" id="home-page">Home</a>
+      </li>
+      
+      <li class="navbar__item">
+        <a href="#services" class="navbar__links" id="services-page">Services</a>
+      </li>
+      <li class="navbar__item navbar__dropdown">
+        <a href="#" class="navbar__links">Sessions</a>
+        <div class="navbar__dropdown-content">
+          <ul>
+            <li><a href="#previous-sessions">Current Sessions</a></li>
+            <li><a href="#upcoming-sessions">Previous Sessions</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="navbar__item navbar__dropdown">
+        <a href="#" class="navbar__links">Profile</a>
+        <div class="navbar__dropdown-content">
+          <ul>
+            <li><a href="ProfileLearner.html">View profile</a></li>
+            <li><a href="editPartner.html">edit profile</a></li>
+           <li> <a href="#overlay" class="open-button">delete account</a></li>
+      <div class="overlay" id="overlay">
+        <div class="message">
+          <h2>Are you sure?</h2>
+          <p>You want to delete account</p>
+         
+          <div>
+            <form action="fluency.html" style="display: inline;">
+              <button type="submit" style="background-color: red;">Yes</button>
+            </form>
+            <form action="homePagePartner.html" style="display: inline;">
+              <button type="submit" style="background-color: green;">No</button>
+            </form>
+          </div>
+        </div>
+      </div>
+          </ul>
+        </div>
+      </li>
+
+ 
+   
+      
+
+      <img src="ProfileIcon.png" alt="Profile" class="custom-img">
+
+     
+    </ul>
+  </div>
+</nav>
       <h1>My Requests </h1>
         <link href="ListOfRequest.css" rel="stylesheet">
         <main class="page-content">
