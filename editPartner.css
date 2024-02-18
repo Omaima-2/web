@@ -208,11 +208,6 @@ body{
 
 
 
-
-
-
-
-
 .age-gender-container{
   display: flex;
   margin-top: 0px;
@@ -237,6 +232,8 @@ body{
 
 .gender-lable{
   color: white;
+  margin-right: 10px;
+  margin-left: 49px;
 }
 
 
@@ -306,4 +303,8 @@ body{
   width: 200px;
   border: 3px solid rgba(43, 39, 39, 0.1);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.save-button:hover{
+  cursor: pointer;
 }
