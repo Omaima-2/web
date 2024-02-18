@@ -13,13 +13,13 @@
 html,
 body {
   height: 100%;
-  background-image: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
-  
 }
 
 body {
   display: grid;
   place-items: center;
+  background-image: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
+
 }
 
 .page-content {
@@ -99,7 +99,6 @@ body {
 .content {
   position: relative;
   display: flex;
-
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -115,13 +114,15 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.2;
+  
 }
 
 .copy {
   font-family: var(--font-serif);
-  font-size: 1.125rem;
-  font-style: italic;
+  font-size: 1rem;
+  font-style: normal;
   line-height: 1.35;
+  padding-bottom: 0px;
 }
 
 .btn {
@@ -188,7 +189,6 @@ body {
   }
 }
 
-
 #acceptBtn {
   background-color: green; /* تغيير لون القبول إلى الأخضر */
   color: white;
@@ -197,28 +197,6 @@ body {
 #rejectBtn {
   background-color: red; /* تغيير لون الرفض إلى الأحمر */
   color: white;}
-  .card {
-    position: relative;
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
 
-  .image-container {
-    position: absolute;
-    top: 2;
-    left: 3;
-    z-index: 1;
-  }
-  
-  .title {
-    position: relative;
-    z-index: 0;
-  }
-  .pic-name{
-    height: 200px;
-
-  }
+  a{text-decoration: none;
+}

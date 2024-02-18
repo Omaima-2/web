@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Edit Request </title>
+    <link rel="stylesheet" href="EditRequest.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="Logo.png" type="image/x.icon">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Edit Request</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Language want to learn:</span>
+            <select name="language" required>
+              <option value="" disabled selected>Language want to learn</option>
+              <option value="en" selected>English</option>
+              <option value="sp">Spanish</option>
+              <option value="ge">German</option>
+              <option value="fr">Frensh</option>
+              <option value="hin">Hindi</option>
+              <option value="ar">Arabic</option>
+              <option value="it">Italy</option>
+              <option value="ch">Chinese</option>
+              <option value="rus">Russian</option>
+              <option value="jap">Japanese</option>
+
+              <!-- Add more options for other languages as needed -->
+            </select>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Level:</span>
+            <select name="Level" required>
+              <option value="" disabled >your current level</option>
+              <option value="Beginner" selected>Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <!-- Add more options for other levels as needed -->
+            </select>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Schedule a session:</span>
+            <input type="datetime-local" value="2024-03-22T00:00">
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Session duration:</span>
+            <select name="duration" required>
+              <option value="" disabled selected>Select a duration</option>
+              <option value="15">15 minutes</option>
+              <option value="30"selected>30 minutes</option>
+              <option value="60">1 hour</option>
+              <!-- Add more options for other durations as needed -->
+            </select>
+          </div>
+          
+          <div>
+            <form>
+              <a href="ListOfRequest.html" class="green-button">Save</a>
+              <a href="listOfRequset.html" class="red-button">Cancel</a>
+
+         
+            </form>
+           
+ 
+        </div>     
+</body>
+</html>
