@@ -235,8 +235,13 @@
 /* Hero Section */
 .hero {
   background: #f4f0f0;
-  background: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
-  padding: 200px 0;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );  padding: 200px 0;
 }
 
 .hero__container {
