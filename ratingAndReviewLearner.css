@@ -1,15 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-* {
-  
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Kumbh Sans', sans-serif;
-  scroll-behavior: smooth;
 }
-.custom-img { width: 100px; height: 100px; }
 
 .navbar {
   background: #000000;/*header */
@@ -239,207 +233,143 @@
   .navbar__dropdown:hover .navbar__dropdown-content {
     display: block;
   }
-  /* rating */
 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-
-
-html,body{
-  display: grid;
-  height: 100%;
   
-  text-align: center;
-  background-image: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
+a{
+  text-decoration: none;
 }
-.container{
-  position: relative;
-  width: 400px;
-  background: #f8f5f5;
-  padding: 20px 30px;
-  border: 1px solid #fff8f8;
-  border-radius: 5px;
+#testimonials{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: auto;
+  width:100%; 
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
 }
-.container .title {
-  font-size: 25px;
-  color: #322e2e;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.container .post{
-  display: none;
-}
-.container .text{
-  font-size: 25px;
-  color: #d5cccc00;
-  font-weight: 500;
-}
-.container .edit{
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 16px;
-  color: #322e2e;
-  font-weight: 500;
-  cursor: pointer;
-}
-.container .edit:hover{
-  text-decoration: underline;
-}
-.container .star-widget input{
-  display: none;
-}
-.star-widget label{
-  font-size: 40px;
-  color: #636161;
-  padding: 10px;
-  float: right;
-  transition: all 0.2s ease;
-}
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label{
-  color: rgb(253, 227, 108);
-}
-input:checked ~ label{
-  color: rgb(253, 227, 108);
-}
-input#rate-5:checked ~ label{
-  color: rgb(253, 227, 108);
-  text-shadow: 0 0 20px #952;
-}
-#rate-1:checked ~ form header:before{
-  content: "It was bad ";
-}
-#rate-2:checked ~ form header:before{
-  content: "I don't like it ";
-}
-#rate-3:checked ~ form header:before{
-  content: "It is awesome ";
-}
-#rate-4:checked ~ form header:before{
-  content: "I just like it ";
-}
-#rate-5:checked ~ form header:before{
-  content: "I just love it ";
-}
-.container form{
-  display: none;
-}
-input:checked ~ form{
-  display: block;
-}
-form header{
-  width: 100%;
-  font-size: 25px;
-  color: rgb(240, 222, 80);
-  font-weight: 500;
-  margin: 5px 0 20px 0;
-  text-align: center;
-  transition: all 0.2s ease;
-}
-form .textarea{
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
-}
-form .textarea textarea{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  color: #373636;
-  border: 1px solid #a19d9d;
-  background: #f8f7f7;
-  padding: 10px;
-  font-size: 17px;
-  resize: none;
-}
-.textarea textarea:focus{
-  border-color: #444;
-}
-form .btn{
-  height: 45px;
-  width: 100%;
-  margin: 15px 0;
-}
-form .btn button{
-  height: 100%;
-  width: 100%;
-  border: 1px solid #8f8989;
-  outline: none;
-  background: #52bc59;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-form .btn button:hover{
-  background: #a09c9c;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-  display: none;
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.testimonial-heading h1{
+  font-size: 3.2rem;
+  font-weight: 500;
+  
+  color: #ffffff;
+  padding: 10px 20px;
 
-.message {
-  background-color: #fff;
-  width: 300px;
+}
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+  
+.testimonial-box{
+  width:500px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #202020;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  text-align: center;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 15px;
 }
-
-.message h2 {
-  margin-top: 0;
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
 }
-
-.message p {
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.custom-img{
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #ffffff;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
-
-.message button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4caf50;
-  color: #fff;
-  cursor: pointer;
+.client-comment p{
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
 }
 
-.message button + button {
-  margin-left: 10px;
-  background-color: #f44336;
+@media(max-width:1060px){
+  .testimonial-box{
+      width:45%;
+      padding: 10px;
+  }
 }
-
-/*.open-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4caf50;
-  color: #fff;
-  cursor: pointer;
-}*/
-
-.overlay:target {
-  display: flex;
+@media(max-width:790px){
+  .testimonial-box{
+      width:100%;
+  }
+  .testimonial-heading h1{
+      font-size: 1.4rem;
+  }
+}
+@media(max-width:340px){
+  .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+  }
+  .reviews{
+      margin-top: 10px;
+  }
+}
+::selection{
+  color: #ffffff;
+  background-color: #252525;
 }
