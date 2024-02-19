@@ -13,8 +13,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
-    column-gap: 30px;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );    column-gap: 30px;
 }
 .form{
     position: absolute;
@@ -22,7 +27,8 @@
     width: 100%;
     padding: 10px;
     border-radius: 6px;
-    background: #FFF;
+    background:#111;
+    
 }
 .form.signup {
     position: relative;
@@ -41,7 +47,7 @@
 header{
     font-size: 28px;
     font-weight: 600;
-    color: #232836;
+    color: #ffffff;
     text-align: center;
 }
 form{
@@ -53,6 +59,7 @@ form{
     width: 100%;
     margin-top: 20px;
     border-radius: 6px;
+    background-color: #222;
 }
 .form .field{
     position: relative;
@@ -89,12 +96,13 @@ form{
 .city input{
     outline: none;
     padding: 0 15px;
-    border: 1px solid#CACACA;
+    border: 1px solid#222;
 }
 .field input{
     outline: none;
     padding: 0 15px;
-    border: 1px solid#CACACA;
+    border: 1px solid#222;
+    background-color: #222;
 }
 .city input:focus{
     border-bottom-width: 2px;
@@ -114,12 +122,18 @@ form{
 }
 .field button{
     color: #fff;
-    background-color:#6666ff;
+    background:linear-gradient(135deg,   #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%);;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 .field button:hover{
-    background-color: #016dcb;
+    background: linear-gradient(-135deg,   #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%);;
 }
 .form-link{
     text-align: center;
@@ -129,7 +143,7 @@ form{
 .form-link a{
     font-size: 14px;
     font-weight: 400;
-    color: #232836;
+    color: #ffffff;
 }
 .form a{
     color: #0171d3;
@@ -147,7 +161,7 @@ form{
 .input-file-label {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6666ff;
+    background: #6666ff;
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
@@ -162,21 +176,14 @@ form{
     color: #8b8b8b; 
   }
 
-  .logo {
-    position: absolute;
-    top: -40px;
-    right: 20px;
-    left: 22px; ;
-    width: 150px;
-    height: 150px;
-}
+
 
 
 
 a.google span{
     font-weight: 500;
     opacity: 0.6;
-    color: #232836;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 400px) {
@@ -194,7 +201,3 @@ a.google span{
   .Gender-details label {
     margin-right: 10px;
   }
-
-
-
-
