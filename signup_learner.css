@@ -50,6 +50,7 @@ header{
     color: #ffffff;
     text-align: center;
 }
+
 form{
     margin-top: 30px;
 }
@@ -60,14 +61,9 @@ form{
     margin-top: 20px;
     border-radius: 6px;
     background-color: #222;
+    color:#fff
 }
-.form .field{
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 6px;
-}
+
 .form .city{
     position: relative;
     height: 50px;
@@ -103,6 +99,7 @@ form{
     padding: 0 15px;
     border: 1px solid#222;
     background-color: #222;
+    color:#fff;
 }
 .city input:focus{
     border-bottom-width: 2px;
@@ -154,22 +151,18 @@ form{
 }
 
 
-.input-file {
-    display: none; 
-}
+.input-file-label{
 
-.input-file-label {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #6666ff;
     color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-}
+    }
+    .input-file{
+    color: #fff;
+    
+    }
 
-.input-file-label:hover {
-    background-color: #016dcb;
-}
+
+
+
 .optional-label {
     font-size: 14px;
     font-weight: 400;
