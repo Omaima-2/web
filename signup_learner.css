@@ -50,6 +50,7 @@ header{
     color: #ffffff;
     text-align: center;
 }
+
 form{
     margin-top: 30px;
 }
@@ -154,22 +155,18 @@ form{
 }
 
 
-.input-file {
-    display: none; 
-}
+.input-file-label{
 
-.input-file-label {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #6666ff;
     color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-}
+    }
+    .input-file{
+    color: #fff;
+    
+    }
 
-.input-file-label:hover {
-    background-color: #016dcb;
-}
+
+
+
 .optional-label {
     font-size: 14px;
     font-weight: 400;
