@@ -121,6 +121,14 @@ body {
   line-height: 1.35;
   padding-bottom: 0px;
 }
+.comment{
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  font-style: normal;
+  line-height: 1.35;
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
 
 .btn {
   cursor: pointer;
