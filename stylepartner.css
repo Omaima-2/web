@@ -12,12 +12,18 @@ body{
   align-items: center;
   padding: 10px;
   
-    background-image: radial-gradient(circle, #f1ff5a, #ffe557, #ffcc5f, #ffb66b, #ffa378, #ff9d92, #ff9dac, #f2a0c2, #e0b2e2, #cbc5f3, #bfd5f8, #c1e1f4);
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
   }
 .container{
   max-width: 700px;
   width: 100%;
-  background-color: #fff;
+  background-color: #111;
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
@@ -29,6 +35,7 @@ body{
   font-size: 25px;
   font-weight: 500;
   position: relative;
+  color: #fff;
 }
 .container .title::before{
   content: "";
@@ -38,7 +45,10 @@ body{
   height: 3px;
   width: 100px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #d5af7d, #efb2b2);
+  background: linear-gradient(135deg,   #231557 0%,
+  #44107a 29%,
+  #ff1361 67%,
+  #fff800 100%);
 }
 .content form .user-details{
   display: flex;
@@ -54,6 +64,7 @@ form .input-box span.details{
   display: flex;
   font-weight: 500;
   margin-bottom: px;
+  color: #fff;
 }
 .user-details .input-box input{
   height: 45px;
@@ -62,9 +73,10 @@ form .input-box span.details{
   font-size: 16px;
   border-radius: 5px;
   padding-left: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #222;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
+  background-color: #222;
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
@@ -125,11 +137,17 @@ form .input-box span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: linear-gradient(135deg, #d5af7d, #9b59b6);
+   background: linear-gradient(135deg,   #231557 0%,
+   #44107a 29%,
+   #ff1361 67%,
+   #fff800 100%);
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #d5af7d, #9b59b6);
+  background: linear-gradient(-135deg,  #231557 0%,
+  #44107a 29%,
+  #ff1361 67%,
+  #fff800 100%);
   }
  @media(max-width: 584px){
  .container{
@@ -163,4 +181,15 @@ select {
   font-size: 16px;
   outline: none;
 }
+.gender-details{
+color: #fff;
 
+}
+.input-file-label{
+
+color: #fff;
+}
+.input-file{
+color: #fff;
+
+}
