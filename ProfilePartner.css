@@ -442,10 +442,7 @@ div.backBtn {
     top: 20px;
   }
 
-  .custom-img {
-    width: 100px;
-    height: 100px;
-    }
+  .custom-img {width: 100px; height: 100px; }
 
   .navbar {
     background: #000000;/*header */
@@ -466,9 +463,9 @@ div.backBtn {
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 0;
   }
   
   #navbar__logo {
