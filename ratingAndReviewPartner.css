@@ -4,7 +4,7 @@
   font-family: poppins;
   box-sizing: border-box;
 }
-
+.custom-img {width: 100px; height: 100px;}
 .navbar {
   background: #000000;/*header */
   height: 80px;
