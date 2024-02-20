@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Edit Information</title>
-  <link rel="stylesheet" type="text/css" href="editLearner.css">
+  <link rel="stylesheet" type="text/css" href="editPartner.css">
   <meta charset="UTF-8">
   <link rel="icon" href="Logo.png" type="image/x.icon">
   <link rel="shortcut icon" href="images/fav-icon.png"/>
@@ -145,12 +145,35 @@
 
     <label class="city-lable">City:</label>
     <input type="text" id="city" name="city" value="Riyadh" required>
+    
+    <label class="language-lable"> language:</label>
+      <select name="language" required>
+        <option value="" disabled selected>Language want to learn</option>
+        <option value="en">English</option>
+        <option value="sp">Spanish</option>
+        <option value="ge">German</option>
+        <option value="fr">Frensh</option>
+        <option value="hin">Hindi</option>
+        <option value="ar">Arabic</option>
+        <option value="it">Italy</option>
+        <option value="ch">Chinese</option>
+        <option value="rus">Russian</option>
+        <option value="jap">Japanese</option>
 
-   
+        <!-- Add more options for other languages as needed -->
+      </select>
+      <!-- Add more options for other languages as needed -->
 </div>
 
+<div class="culture-section">
+    <div class="culture-lable">culture:</div>
+    <textarea class="culture" readonly>I Live in landon  </textarea>
+  </div>
 
-        <a href="ProfilePartner.html">
+   
+
+
+  <a href="ProfilePartner.html">
     <button onclick="window.location.href='new.html'" class="save-button">save</button>
   </a>
 
