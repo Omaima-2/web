@@ -70,6 +70,7 @@ body{
     margin-top: 150px;
   margin-bottom: 90px;
   margin-left: 140px;
+  margin-right: 140px;
   display: grid;
     place-items: center;
     height: 600px;
@@ -372,8 +373,8 @@ div.backBtn:hover span.bLine {
 
 
 .custom-img {
-   width: 50px;
-    height: 50px;
+   width: 70px;
+    height: 70px;
     margin-right: 20px;
    }
 
