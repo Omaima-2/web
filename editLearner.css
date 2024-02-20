@@ -70,6 +70,7 @@ body{
     margin-top: 150px;
   margin-bottom: 90px;
   margin-left: 140px;
+  margin-right: 140px;
   display: grid;
     place-items: center;
     height: 600px;
