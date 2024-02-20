@@ -9,7 +9,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <img src="LogoBlackBackground.PNG" alt="Flunecy">
+       
+      </div>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="homePageLearner.html" class="navbar__links" id="home-page">Home</a>
+        </li>
 
+        
+    <li class="navbar__item">
+      <a href="homePageLearner.html" class="navbar__links" id="services-page">Services</a>
+    </li>
+
+    <li class="navbar__item navbar__dropdown">
+      <a href="#" class="navbar__links">Sessions</a>
+      <div class="navbar__dropdown-content">
+        <ul>
+          <li><a href="currentSessionLearner.html">Current Sessions</a></li>
+          <li><a href="preSessionLearner.html">Previous Sessions</a></li>
+        </ul>
+      </div>
+    </li>
+
+
+    <li class="navbar__item">
+      <a href="RequestLearner.html" class="navbar__links" id="partner-list-page">My Requests</a>
+    </li>
+    <li class="navbar__item navbar__dropdown">
+      <a href="#" class="navbar__links">Profile</a>
+      <div class="navbar__dropdown-content">
+        <ul>
+          <li><a href="ProfileLearner.html">View profile</a></li>
+          <li><a href="editLearner.html">edit profile</a></li>
+         <li> <a href="#overlay" class="open-button">delete account</a></li>
+    <div class="overlay" id="overlay">
+      <div class="message">
+        <h2>Are you sure?</h2>
+        <p>You want to delete account</p>
+       
+        <div>
+          <form action="fluency.html" style="display: inline;">
+            <button type="submit" style="background-color: red;">Yes</button>
+          </form>
+          <form action="homePagePartner.html" style="display: inline;">
+            <button type="submit" style="background-color: green;">No</button>
+          </form>
+        </div>
+      </div>
+    </div>
+        </ul>
+      </div>
+    </li>
+    <img src="ProfileIcon.png" alt="Profile" class="custom-img">
+
+
+  </ul>
+</div>
+</nav>
     <div class="backBtn">
         <a href="homePageLearner.html">
           <span class="line tLine"></span>
