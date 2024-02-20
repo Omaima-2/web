@@ -1,8 +1,9 @@
 *{
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: poppins;
 }
 
-body {
+
+.under-bar{
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -10,6 +11,14 @@ body {
     #ff1361 67%,
     #fff800 100%
   );
+
+  background-repeat: repeat;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  height: 698px;
+  width: 1395px;
 }
 
 h1 {
@@ -58,6 +67,11 @@ input[type="submit"]:hover {
 }
 
 body{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -65,19 +79,15 @@ body{
     #ff1361 67%,
     #fff800 100%
   );
-
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  }
+  
 
 
 
 .container {
-  margin-top: 120px;
+  margin-top: 50px;
   margin-bottom: 90px;
+  margin-left: 140px;
   display: grid;
   place-items: center;
   height: 600px;
@@ -136,20 +146,30 @@ body{
   display: flex;
   margin-top: 0px;
   height: 30px;
+  width: 1100px;
 }
 
 .lastName-lable{
-  width: 250px;
-  margin-left: 30px;
+  width: 140px;
+  margin-left: 15px;
   color: white;
-  margin-right: 10px;
+  margin-right: 0px;
   
 }
 
+#lastName{
+  width: 420px;
+  margin-right: 98px;
+}
+
 .firstName-label{
-  width: 10x;
-  margin-right: 0px;
+  width: 0x;
+  margin-left: 60px;
   color: white;
+}
+
+#firstName{
+  width: 400px;
 }
 
 
@@ -308,7 +328,7 @@ body{
 .save-button:hover{
   cursor: pointer;
 }
-.custom-img { width: 100px; height: 100px; }
+.custom-img { width: 50px; height: 50px; }
 
 .navbar {
   background: #000000;/*header */
@@ -317,8 +337,10 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
 }
 
@@ -545,6 +567,7 @@ div.backBtn {
   transition: all 0.4s ease;
   position: fixed;
   cursor: pointer;
+  margin-top: 50px
   
 }
 
