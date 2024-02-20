@@ -553,3 +553,7 @@ div.backBtn:hover span.bLine {
   left: -15px;
   top: 20px;
 }
+.btn a{
+  color:white;
+  text-decoration: none;
+}
