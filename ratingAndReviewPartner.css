@@ -6,6 +6,8 @@
 }
 .custom-img { 
   height: 100px; 
+  width: 100px;
+  
 }
   
 .navbar {
@@ -358,11 +360,7 @@ a{
   display: flex;
   align-items: center;
 }
-.custom-img{
-  height: 40px;
-  margin-right: 20px;
-  margin-left: 10px;
-}
+
 .name-user{
   display: flex;
   flex-direction: column;
