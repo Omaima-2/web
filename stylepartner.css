@@ -211,11 +211,12 @@ color: #fff;
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
+
 }
-.form a{
-  color: #0171d3;
+.form-link a{
+ color: blue;
   text-decoration: none;
 }
-.form-content a:hover{
+.form-link a:hover{
   text-decoration: underline;
 }
