@@ -3,6 +3,8 @@
 <head>
   <title>My Profile</title>
   <link rel="stylesheet" type="text/css" href="ProfileLearner.css">
+  <meta charset="UTF-8">
+  <link rel="icon" href="Logo.png" type="image/x.icon">
   <link rel="shortcut icon" href="images/fav-icon.png"/>
     <!--poppins-font-family------------------->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,20 +37,20 @@
       <div class="navbar__dropdown-content">
         <ul>
           <li><a href="currentSessionLearner.html">Current Sessions</a></li>
-          <li><a href="#">Previous Sessions</a></li>
+          <li><a href="preSessionLearner.html">Previous Sessions</a></li>
         </ul>
       </div>
     </li>
 
 
     <li class="navbar__item">
-      <a href="#partner-list" class="navbar__links" id="partner-list-page">My Requests</a>
+      <a href="RequestLearner.html" class="navbar__links" id="partner-list-page">My Requests</a>
     </li>
     <li class="navbar__item navbar__dropdown">
       <a href="#" class="navbar__links">Profile</a>
       <div class="navbar__dropdown-content">
         <ul>
-          <li><a href="ProfileLearner.html">View profile</a></li>
+          <li><a href="#">View profile</a></li>
           <li><a href="editLearner.html">edit profile</a></li>
          <li> <a href="#overlay" class="open-button">delete account</a></li>
     <div class="overlay" id="overlay">
@@ -60,7 +62,7 @@
           <form action="fluency.html" style="display: inline;">
             <button type="submit" style="background-color: red;">Yes</button>
           </form>
-          <form action="homePagePartner.html" style="display: inline;">
+          <form action="homePageLearner.html" style="display: inline;">
             <button type="submit" style="background-color: green;">No</button>
           </form>
         </div>
@@ -103,22 +105,22 @@
         <div class="lastName-container">
     <label class="firstName-label">First Name:</label>
 </div>
-    <input type="text" id="firstName" name="firstName" value="Sara"readonly>
+    <input type="text" id="firstName" name="firstName" value="Sara" readonly>
 
     <label class="lastName-lable">Last Name:</label>
 
-    <input type="text" id="lastName" name="lastName" value="Mohammed"readonly>
+    <input type="text" id="lastName" name="lastName" value="Mohammed" readonly>
     </div>
 
 
     <div class="email-password-container">
     <label class="email-lable">Email:</label>
-    <input type="email" id="email" name="email" value="johndoe@example.com"readonly>
+    <input type="email" id="email" name="email" value="johndoe@example.com" readonly>
     
 
     <div class="email-password-container">
       <label class="password-lable">password:</label>
-      <input type="email" id="password" name="password" value="Am-000000"readonly>
+      <input type="email" id="password" name="password" value="Am-000000" readonly>
       
       </label>
       </div>
@@ -126,10 +128,10 @@
 
     <div class="age-gender-container">
     <label class="age-lable">Age:</label>
-    <input type="number" id="age" name="age" value="20"readonly>
+    <input type="number" id="age" name="age" value="20" readonly>
 
     <label class="gender-lable">Gender:</label>
-    <input type="gender" id="gender-selector" name="gender" value="Female"readonly>
+    <input type="gender" id="gender-selector" name="gender" value="Female" readonly>
 
 
 </div>

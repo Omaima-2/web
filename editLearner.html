@@ -3,6 +3,8 @@
 <head>
   <title>Edit Information</title>
   <link rel="stylesheet" type="text/css" href="editLearner.css">
+  <link rel="icon" href="Logo.png" type="image/x.icon">
+  <meta charset="UTF-8">
   <link rel="shortcut icon" href="images/fav-icon.png"/>
     <!--poppins-font-family------------------->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -49,7 +51,7 @@
       <div class="navbar__dropdown-content">
         <ul>
           <li><a href="ProfileLearner.html">View profile</a></li>
-          <li><a href="editLearner.html">edit profile</a></li>
+          <li><a href="#">edit profile</a></li>
          <li> <a href="#overlay" class="open-button">delete account</a></li>
     <div class="overlay" id="overlay">
       <div class="message">
@@ -60,7 +62,7 @@
           <form action="fluency.html" style="display: inline;">
             <button type="submit" style="background-color: red;">Yes</button>
           </form>
-          <form action="homePagePartner.html" style="display: inline;">
+          <form action="homePageLearner.html" style="display: inline;">
             <button type="submit" style="background-color: green;">No</button>
           </form>
         </div>
@@ -98,17 +100,17 @@
         <div class="lastName-container">
     <label class="firstName-label">First Name:</label>
 </div>
-    <input type="text" id="firstName" name="firstName" value="Sara"required>
+    <input type="text" id="firstName" name="firstName" value="Sara" required>
 
     <label class="lastName-lable">Last Name:</label>
 
-    <input type="text" id="lastName" name="lastName" value="Mohammed"required>
+    <input type="text" id="lastName" name="lastName" value="Mohammed" required>
     </div>
 
 
     <div class="email-password-container">
     <label class="email-lable">Email:</label>
-    <input type="email" id="email" name="email" value="johndoe@example.com"required>
+    <input type="email" id="email" name="email" value="johndoe@example.com" required>
     
 
     <div class="email-password-container">
@@ -129,7 +131,7 @@
     
    
     <label class="gender-lable">Gender:</label>
-    <select id="gender-selector" name="gender"required>
+    <select id="gender-selector" name="gender" required>
       <option id="gender" value="male" >Male</option>
       <option id="gender" value="female"selected>Female</option>
     </select>
@@ -150,7 +152,7 @@
 </div>
 
 
-        <a href="HomePageLearner.html">
+        <a href="ProfileLearner.html">
     <button onclick="window.location.href='new.html'" class="save-button">save</button>
   </a>
 
