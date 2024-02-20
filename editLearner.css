@@ -3,23 +3,6 @@
   }
   
 
-  .under-bar{
-    background-image: linear-gradient(
-      -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
-    );
-  
-    background-repeat: repeat;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  
-    height: 698px;
-    width: 1395px;
-  }
   
   h1 {
     text-align: center;
@@ -66,24 +49,28 @@
     background-color: #45a049;
   }
   
-  body{
- 
   
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
   }
   
   
-  
   .container {
-    margin-top: 50px;
+    margin-top: 150px;
   margin-bottom: 90px;
   margin-left: 140px;
   display: grid;
-    display: grid;
     place-items: center;
     height: 600px;
     border: 1px solid rgba(95, 94, 94, 0.1);
