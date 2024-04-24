@@ -52,13 +52,13 @@ header{
 }
 
 form{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .form .field{
     position: relative;
     height: 50px;
     width: 100%;
-    margin-top: 20px;
+    margin-bottom: 15px;
     border-radius: 6px;
     background-color: #222;
     color:#fff
@@ -157,6 +157,8 @@ form{
     }
     .input-file{
     color: #fff;
+    margin-left: 40px;
+    margin-bottom: 10px;
     
     }
 
@@ -168,7 +170,6 @@ form{
     font-weight: 400;
     color: #8b8b8b; 
   }
-
 
 
 
