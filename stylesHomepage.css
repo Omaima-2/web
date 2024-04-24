@@ -249,10 +249,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 120px;
   margin: 0 auto;
-  height: 90%;
-  text-align: center;
+  height: 100%;
+  text-align: left;
   padding: 30px;
 }
 
@@ -342,8 +342,8 @@
 
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr; /* Adjust this to your preference */
+  justify-content: center; /* Center the items horizontally */
 }
 
 .services__card {
