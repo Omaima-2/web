@@ -1,3 +1,21 @@
+<?php
+$servername= "localhost";
+$username= "root" ;
+$password= "";
+$dbname= "fluency" ;
+$connection= mysqli_connect($servername,$username,$password,$dbname);
+$database= mysqli_select_db($connection, $dbname);
+// Check the connection
+if (!$connection) 
+die("Connection failed: ".mysqli_connect_error());
+
+/ Fetch data from the database
+$sql = "SELECT * FROM requestsession"; // Replace your_table with your actual table name
+$result = mysqli_query($connection , $sql);
+
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -87,7 +105,28 @@
       <img src="ProfileIcon.png" alt="Profile" class="custom-img">
     </ul>
   </nav>
-  
+
+  <main class="page-content">
+            <?php
+            // Check if there is any data in the result set
+            if (mysqli_num_rows($result) > 0) {
+              // Output data of each row
+              while ($row = mysqli_fetch_assoc($result)) {
+                  each '<div class="card" '>;
+                  each '<div class="content"'>;
+                  echo '<h2 class="title">Date: ' . $row["Schedule"] . '</h2';
+                  echo '<p class="copy">Session Duration: ' . $row["Duration"] . '</p>';
+                  echo '<p class="copy">Language to Learn: ' . $row["Language"] . '</p>';
+                  echo '<p class="copy">Language Partner: ' . $row["partner_id_req"] . '</p>';
+                  echo '</div></div>' ;
+              }
+          } else {
+              echo "0 results";
+          }
+            ?>
+</main>
+
+  <!--
         <main class="page-content">
             <div class="card">
               <div class="content">
@@ -122,5 +161,6 @@
               </div>
             </div>
           </main>
+-->
     </body>
 </html>
