@@ -1,3 +1,27 @@
+<?php 
+
+
+$servername= "localhost";
+$username= "root" ;
+$password= "";
+$dbname= "fluency" ;
+$connection= mysqli_connect($servername,$username,$password,$dbname);
+$database= mysqli_select_db($connection, $dbname);
+// Check the connection
+if (!$connection) 
+die("Connection failed: ".mysqli_connect_error());
+
+$partnerID = $_POST['partnerId'];
+$partnerName = $_POST['partnerName'];
+//partner_info( partner_id , Fnam , Lname, email, phoneNumber, password , confirmPaswoord , City , Age 
+//, Language, Bio, Photo , Gender , ProficiencyLevel , SessionPrice); 
+// Fetch data from the database
+$sql = "SELECT * FROM partner_info where partner_id = $partnerID" ; 
+$result = mysqli_query($connection , $sql);
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,31 +108,31 @@
         </div>
 
     <div class="lastName-container">
-      <label class="firstName-label">Name: </label>
+      <label class="firstName-label">Name: <?php echo $result['Fnam'] . ' ' . $result['Lname']; ?> </label>
+    </div>
+   
+    <div class="lastName-container">
+        <label class="firstName-label">Bio: <?php echo $result[' Bio']; ?> </label>
     </div>
 
     <div class="lastName-container">
-        <label class="firstName-label">Bio: </label>
+      <label class="firstName-label">language spoken: <?php echo $result['Language']; ?> </label>
     </div>
 
     <div class="lastName-container">
-      <label class="firstName-label">language spoken: </label>
-    </div>
-
-    <div class="lastName-container">
-      <label class="firstName-label">Proficiency level: </label>
+      <label class="firstName-label">Proficiency level: <?php echo $result['ProficiencyLevel']; ?></label>
     </div>
     
     <div class="lastName-container">
-      <label class="firstName-label">Raiting & Reviews: </label>
+    <label class="firstName-label">Rating & Reviews: <a href="raitingAndReviewPartner.php?partner_id=<?php echo $partnerId; ?>">View Partner's Rating & Reviews</a></label>
     </div>
 
     <div class="lastName-container">
-      <label class="firstName-label">price per houre: </label>
+      <label class="firstName-label">price per houre: <?php echo $result['SessionPrice']; ?></label>
     </div>
 
     <div class="lastName-container">
-        <label class="firstName-label">Contact me: </label>
+    <label class="firstName-label">Contact me: <a href="mailto:<?php echo $result['email']; ?>"><?php echo $result['email']; ?></a></label>
       </div>
 </div>
  

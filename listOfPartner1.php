@@ -17,7 +17,7 @@ if (!$connection)
 die("Connection failed: ".mysqli_connect_error());
 
 // Fetch data from the database
-$sql = "SELECT * FROM partner_info"; // Replace your_table with your actual table name
+$sql = "SELECT * FROM partner_info"; 
 $result = mysqli_query($connection , $sql);
 
 

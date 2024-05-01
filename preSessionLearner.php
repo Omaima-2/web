@@ -9,7 +9,7 @@ $database= mysqli_select_db($connection, $dbname);
 if (!$connection) 
 die("Connection failed: ".mysqli_connect_error());
 
-/ Fetch data from the database
+// Fetch data from the database
 $sql = "SELECT * FROM requestsession"; // Replace your_table with your actual table name
 $result = mysqli_query($connection , $sql);
 
