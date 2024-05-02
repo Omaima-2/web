@@ -1,4 +1,10 @@
 <?php
+ session_start();
+
+ // Check if the user is logged in
+ if (isset($_SESSION['user_id'])) // User is logged in, retrieve the user ID
+ $user_id = $_SESSION['user_id'];
+
 $servername= "localhost";
 $username= "root" ;
 $password= "";
@@ -9,9 +15,11 @@ $database= mysqli_select_db($connection, $dbname);
 if (!$connection) 
 die("Connection failed: ".mysqli_connect_error());
 
-// Fetch data from the database
-$sql = "SELECT * FROM requestsession"; // Replace your_table with your actual table name
-$result = mysqli_query($connection , $sql);
+=// Fetch data from the database where schedule date is before the current date
+$sql = "SELECT * FROM requestsession WHERE Sechule  < CURDATE()";
+$result = mysqli_query($connection, $sql);
+
+// Rest of the code...
 
 
 ?>
@@ -112,55 +120,22 @@ $result = mysqli_query($connection , $sql);
             if (mysqli_num_rows($result) > 0) {
               // Output data of each row
               while ($row = mysqli_fetch_assoc($result)) {
-                  each '<div class="card" '>;
-                  each '<div class="content"'>;
-                  echo '<h2 class="title">Date: ' . $row["Schedule"] . '</h2';
+                if($row["Status"] == 2){
+                  echo '<div class="card" '>;
+                  echo '<div class="content"'>;
+                  echo '<h2 class="title">Date: ' . $row["Sechule"] . '</h2';
                   echo '<p class="copy">Session Duration: ' . $row["Duration"] . '</p>';
                   echo '<p class="copy">Language to Learn: ' . $row["Language"] . '</p>';
                   echo '<p class="copy">Language Partner: ' . $row["partner_id_req"] . '</p>';
+                  echo '<p class="copy">Rate Partner: <a href = "LearnerRaitingAndReview.html"> HERE! </a></p>';
                   echo '</div></div>' ;
+                }
               }
           } else {
-              echo "0 results";
+              echo "No previous sessions yet.";
           }
             ?>
 </main>
 
-  <!--
-        <main class="page-content">
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Sun, 4 Feb. 2024</h2>
-                <p class="copy">Session duratin: 30 min.<br>Time: 12:00 pm.</p>
-                <p class="copy">Language to learn: English.</p>
-                <p class="copy">Language partner: <br>Emma Noah.<br><br> Rate partner: <a href="LearnerRaitingAndReview.html"><img src="rate.png" width="100px"></a></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mon, 15 Jan. 2024</h2>
-                <p class="copy">Session duratin: 1 hr.<br>Time: 4:00 pm.</p>
-                <p class="copy">Language to learn: Spanish.</p>
-                <p class="copy">Language partner: <br>Jordi Alba.<br><br> Rate partner: <a href="LearnerRaitingAndReview.html"><img src="rate.png" width="100px"></a></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Wed, 3 Jan. 2024</h2>
-                <p class="copy">Session duratin: 15 min.<br>Time: 8:30 pm.</p>
-                <p class="copy">Language to learn: English.</p>
-                <p class="copy">Language partner: <br>Emma Noah.<br><br> Rate partner: <a href="LearnerRaitingAndReview.html"><img src="rate.png" width="100px"></a> </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Wed, 27 Dec. 2023</h2>
-                <p class="copy">Session duratin: 30 min.<br>Time: 11:45 am.</p>
-                <p class="copy">Language to learn: Indian.</p>
-                <p class="copy">Language partner: <br>Kumar Moh.<br><br> Rate partner: <a href="LearnerRaitingAndReview.html"><img src="rate.png" width="100px"></a></p>
-              </div>
-            </div>
-          </main>
--->
     </body>
 </html>

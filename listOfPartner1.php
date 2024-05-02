@@ -125,7 +125,7 @@ $result = mysqli_query($connection , $sql);
                 while ($row = $result->fetch_assoc()) {
                    echo '<div class="card" '>;
                     echo '<div class="content"'>;
-                    echo '<form method="post" class="partner-form >';
+                    echo '<form method="post" class="partner-form" >';
 
                     echo '<label for="partnerLanguage" class="title" >Language:</label>';
                     echo '<input type="text" id="partnerLanguage" name="partnerLanguage" class="cop" value="' . $row["Language"] . '"><br><br>';
@@ -166,6 +166,7 @@ $result = mysqli_query($connection , $sql);
         });
     });
 </script>
+
 
 
 
