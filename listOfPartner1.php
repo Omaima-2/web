@@ -123,8 +123,8 @@ $result = mysqli_query($connection , $sql);
             if ($result->num_rows > 0) {
                 // Output data of each row
                 while ($row = $result->fetch_assoc()) {
-                   echo '<div class="card" '>;
-                    echo '<div class="content"'>;
+                   echo '<div class="card" >';
+                    echo '<div class="content >"';
                     echo '<form method="post" class="partner-form" >';
 
                     echo '<label for="partnerLanguage" class="title" >Language:</label>';

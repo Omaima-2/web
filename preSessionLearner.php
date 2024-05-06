@@ -15,9 +15,17 @@ $database= mysqli_select_db($connection, $dbname);
 if (!$connection) 
 die("Connection failed: ".mysqli_connect_error());
 
-=// Fetch data from the database where schedule date is before the current date
-$sql = "SELECT * FROM requestsession WHERE Sechule  < CURDATE()";
+// Get current date in the format "YYYY-MM-DD"
+$currentDate = date("Y-m-d");
+
+// Get current time in the format "HH:MM:SS"
+$currentTime = date("H:i:s");
+
+// Fetch data from the database where schedule date is before the current date
+$sql = "SELECT * FROM requestsession WHERE Date  < '$currentDate' AND time< '$currentTime' AND Status=1 AND LID_rq= $user_id";
 $result = mysqli_query($connection, $sql);
+
+
 
 // Rest of the code...
 
@@ -120,13 +128,17 @@ $result = mysqli_query($connection, $sql);
             if (mysqli_num_rows($result) > 0) {
               // Output data of each row
               while ($row = mysqli_fetch_assoc($result)) {
-                if($row["Status"] == 2){
-                  echo '<div class="card" '>;
-                  echo '<div class="content"'>;
-                  echo '<h2 class="title">Date: ' . $row["Sechule"] . '</h2';
+                if($row["Status"] == 1){
+                  echo '<div class="card>" ';
+                  echo '<div class="content>"';
+                  echo '<h2 class="title">Date: ' . $row["time"] . $row["Date"] .'</h2>';
                   echo '<p class="copy">Session Duration: ' . $row["Duration"] . '</p>';
-                  echo '<p class="copy">Language to Learn: ' . $row["Language"] . '</p>';
-                  echo '<p class="copy">Language Partner: ' . $row["partner_id_req"] . '</p>';
+
+                  $sql1 = "SELECT Language FROM partner_info WHERE partner_id = " . $row["pID_req"];
+                  $result1 = mysqli_query($connection, $sql1);
+
+                  echo '<p class="copy">Language to Learn: ' . $result1 . '</p>';
+                  echo '<p class="copy">Language Partner: ' . $row["pID_req"] . '</p>';
                   echo '<p class="copy">Rate Partner: <a href = "LearnerRaitingAndReview.html"> HERE! </a></p>';
                   echo '</div></div>' ;
                 }
