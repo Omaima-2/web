@@ -1,5 +1,5 @@
- <img src="LogoWithTitle.png" alt="Fluency Logo" width="100" style="border-radius: 50%;" />
-# Fluency
+ <img src="LogoWithTitle.png" alt="Fluency Logo" width="300" style="border-radius: 70%;" />
+
 
 Fluency is an interactive web application designed to enhance language learning through engaging and intuitive interfaces. Our platform provides users with a variety of resources to improve their language skills effectively.
 
