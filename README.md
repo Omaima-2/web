@@ -1,4 +1,4 @@
-Simple website created using HTML, CSS &amp; Javascript with smooth scroll effect
-
-Watch the full tutorial on how I built this website on my Youtube @Brian Design https://youtu.be/3-2Pj5hxwrw
+Fluency
+Developed an interactive web application for language learning. 
+Collaborated with a cross-functional team to design user interfaces and implement key features.
 
