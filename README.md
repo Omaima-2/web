@@ -25,7 +25,19 @@ Developing the Fluency application presented several challenges that required in
 
  **Feedback Mechanism**: Designing an effective system for users to rate and review instructors while preventing misuse or spam was a significant hurdle. We implemented moderation and validation processes to maintain the integrity of feedback.
 
-## Color Reference
+
+
+
+##  Lessons Learned
+- **Testing and Validation**: Implementing thorough testing procedures, including user testing and automated tests, helped us identify and resolve issues early, leading to a more reliable product.
+- **Time Management**: Balancing feature development with testing and bug fixes taught us the importance of time management. Setting realistic deadlines and prioritizing tasks helped us stay on track.
+## Resources
+
+- **[Figma](https://www.figma.com/)**: A collaborative design tool that helped us create and iterate on UI/UX designs effectively.
+- **[Stack Overflow](https://stackoverflow.com/)**: A valuable community for getting answers to coding questions and troubleshooting issues.
+- **[W3Schools](https://www.w3schools.com/)**: A helpful site for learning web development basics, including HTML, CSS, and JavaScript.
+
+  ## Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -38,13 +50,3 @@ Developing the Fluency application presented several challenges that required in
 | Yellow            | ![#FFD700](https://via.placeholder.com/10/FFD700?text=+) #FFD700   |
 | Orange            | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) #FFA500   |
 | Purple            | ![#800080](https://via.placeholder.com/10/800080?text=+) #800080   |
-
-
-##  Lessons Learned
-- **Testing and Validation**: Implementing thorough testing procedures, including user testing and automated tests, helped us identify and resolve issues early, leading to a more reliable product.
-- **Time Management**: Balancing feature development with testing and bug fixes taught us the importance of time management. Setting realistic deadlines and prioritizing tasks helped us stay on track.
-## Resources
-
-- **[Figma](https://www.figma.com/)**: A collaborative design tool that helped us create and iterate on UI/UX designs effectively.
-- **[Stack Overflow](https://stackoverflow.com/)**: A valuable community for getting answers to coding questions and troubleshooting issues.
-- **[W3Schools](https://www.w3schools.com/)**: A helpful site for learning web development basics, including HTML, CSS, and JavaScript.
